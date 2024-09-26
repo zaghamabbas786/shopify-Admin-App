@@ -1,0 +1,186 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Note that some adapters may set a maximum length for the String type by default, please ensure your strings are long
+// enough when changing adapters.
+// See https://www.prisma.io/docs/orm/reference/prisma-schema-reference#string for more information
+datasource db {
+  provider = "postgres"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id                   String              @id
+  shop                 String
+  state                String
+  isOnline             Boolean             @default(false)
+  scope                String?
+  expires              DateTime?
+  accessToken          String
+  userId               BigInt?
+  announcment          Announcment?
+  logo                 Logo?
+  featureCollection    FeaturedCollection?
+  dealOfTheDay         DealOfTheDay?
+  menuConFig           MenuConFig?
+  splash               Splash?
+  bottomBar            BottomBar?
+  newArrival           NewArrival?
+  collection           Collection?
+  heroBanner           HeroBanner?
+  collectionSorting    CollectionSorting?
+  productGrid          ProductGrid?
+  productTile          ProductTile?
+  pdpElement           PdpElements?
+  shopByBrand          ShopByBrand?
+  storefrontAccessToken String              @default("")
+}
+
+model DealOfTheDay {
+  id                 Int     @id @default(autoincrement())
+  session            Session @relation(fields: [userId], references: [id])
+  userId             String  @unique
+  promotionData      String  @default("")
+  bannerHeadingAlign String  @default("")
+  bannerButtonAlign  String  @default("")
+  bannerTimerAlign   String  @default("")
+}
+
+model FeaturedCollection {
+  id               Int     @id @default(autoincrement())
+  session          Session @relation(fields: [userId], references: [id])
+  userId           String  @unique
+  collectionHandle String
+  isChecked        Boolean
+}
+
+model Announcment {
+  id                   Int     @id @default(autoincrement())
+  session              Session @relation(fields: [userId], references: [id])
+  userId               String  @unique
+  announcmentText      String  @default("")
+  crossIcon            String  @default("")
+  announcementSvgColor String  @default("")
+  alignAnnounceText    String  @default("")
+}
+
+model Logo {
+  id               Int     @id @default(autoincrement())
+  session          Session @relation(fields: [userId], references: [id])
+  userId           String  @unique
+  menuIcon         String  @default("")
+  logoIcon         String  @default("")
+  profileIcon      String  @default("")
+  menuIconcolor    String  @default("")
+  profileIconColor String  @default("")
+  logoIconColor    String  @default("")
+  backgroundColor  String  @default("")
+  logoAlignment    String  @default("")
+  iconsAlignment   String  @default("")
+}
+
+model MenuConFig {
+  id               Int     @id @default(autoincrement())
+  session          Session @relation(fields: [userId], references: [id])
+  userId           String  @unique
+  menuItme         String
+  dealText         String  @default("")
+  menuColor        String
+  fontWeight       String  @default("")
+  socialLinks      String  @default("")
+  socialIcon1      String  @default("")
+  socialIcon2      String  @default("")
+  socialIcon3      String  @default("")
+  socialIcon4      String  @default("")
+  socialicon1Color String  @default("")
+  socialicon2Color String  @default("")
+  socialicon3Color String  @default("")
+  socialicon4Color String  @default("")
+}
+
+model Splash {
+  id              Int     @id @default(autoincrement())
+  session         Session @relation(fields: [userId], references: [id])
+  userId          String  @unique
+  heading         String  @default("")
+  headingColor    String  @default("")
+  subHeading      String  @default("")
+  subHeadingColor String  @default("")
+  image           String
+}
+
+model BottomBar {
+  id            Int     @id @default(autoincrement())
+  session       Session @relation(fields: [userId], references: [id])
+  userId        String  @unique
+  bottomBarData String  @default("")
+}
+
+model NewArrival {
+  id             Int     @id @default(autoincrement())
+  session        Session @relation(fields: [userId], references: [id])
+  userId         String  @unique
+  newArrivalData String  @default("")
+}
+
+model Collection {
+  id             Int     @id @default(autoincrement())
+  session        Session @relation(fields: [userId], references: [id])
+  userId         String  @unique
+  collectionData String  @default("")
+}
+
+model HeroBanner {
+  id             Int     @id @default(autoincrement())
+  session        Session @relation(fields: [userId], references: [id])
+  userId         String  @unique
+  heroBannerData String  @default("")
+}
+
+model CollectionSorting {
+  id                Int     @id @default(autoincrement())
+  session           Session @relation(fields: [userId], references: [id])
+  userId            String  @unique
+  collectionSorting String  @default("")
+}
+
+model ProductGrid {
+  id              Int     @id @default(autoincrement())
+  session         Session @relation(fields: [userId], references: [id])
+  userId          String  @unique
+  productGridData String  @default("")
+}
+
+model ProductTile {
+  id                             Int     @id @default(autoincrement())
+  session                        Session @relation(fields: [userId], references: [id])
+  userId                         String  @unique
+  fontWeightProductType          String  @default("")
+  fontWeightProductTitle         String  @default("")
+  fontWeightProductDescription   String  @default("")
+  fontWeightProductPrice         String  @default("")
+  fontWeightProductDiscountPrice String  @default("")
+  productTypeColor               String  @default("")
+  productTitleColor              String  @default("")
+  productDescriptionColor        String  @default("")
+  productPriceColor              String  @default("")
+  productDiscountPriceColor      String  @default("")
+}
+
+model PdpElements {
+  id      Int     @id @default(autoincrement())
+  session Session @relation(fields: [userId], references: [id])
+  userId  String  @unique
+  pdpData String  @default("")
+}
+
+model ShopByBrand {
+  id              Int     @id @default(autoincrement())
+  session         Session @relation(fields: [userId], references: [id])
+  userId          String  @unique
+  shopByBrandData String  @default("")
+}

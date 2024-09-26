@@ -1,0 +1,469 @@
+.svgColorPicker .Polaris-Text--root {
+    display: none;
+}
+.svgColorPicker svg {
+    width: 20px;
+    height: 20px;
+}
+.text-field-parent .Polaris-TextField__Input{
+padding-right: 50px;
+}
+
+/*-------------- splash css ---------------------*/
+.splash-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.splash-img-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px
+}
+.splash-img{
+    width: 220px;
+    height: 220px,
+}
+
+/*-------------- announcement css ---------------------*/
+
+.announce-main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.announce-bg-main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.colorPicker-main{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px
+}
+.announce-removeBtn-main, .announce-addBtn-main {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*-------------- header css ---------------------*/
+
+.header-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.header-logo-main, .header-profile-main, .header-logo-align, .header-icons-align{
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+
+.header-bg-colopicker{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*-------------- collections menu css ---------------------*/
+
+.collection-menu-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.collection-menu-heading{
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+.collection-menu-chooseBtn{
+    margin-right: 10px;
+    margin-top: 20px; 
+    display: flex;
+}
+.collection-menu-list{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 4px
+}
+.collection-menu-colorMain{
+    display: flex;
+    justify-content: flex-start;
+}
+.col-title-color{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/*-------------- banners css ---------------------*/
+
+.banners-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.banner-hd-align, .banner-btn-align, .banner-timer-align, .banner-hd, .banner-sub-hd, .banner-btn, .banner-promo-hd, 
+.banner-hero-hd, .banner-hero-sub-hd, .banner-hero-btn, .banner-hero-typ, .banner-img-align, .banner--type{
+    margin-bottom: 10px;
+    margin-top: 20px
+}
+.promo-timer-main{
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px
+}
+.promo-showTimer-main{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around
+}
+.promo-showTimer-sub{
+    justify-content:center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 50%
+}
+.start-timer-input{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #eee;
+    width: 95%
+}
+.banner-promo-type{
+    margin-top: 20px;
+    display: flex
+}
+.banner-promo-title{
+    margin-top: 10px; 
+    padding-left: 10px
+}
+.banner-promo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+}
+.banner-img{
+    object-fit: contain;
+    width: 220px;
+    height: 220px
+}
+.banner-remove-btn{
+    margin-top: 15px;
+    display: flex; 
+    justify-content: flex-end
+}
+.video-bannner-main{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center
+}
+.video-link-hd{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.banner-hero-type-main{
+    margin-top: 10px; 
+    display: flex
+}
+.banner-hero-type-title{
+    margin-top: 10px;
+    padding-left: 10px
+}
+.banner-img-main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    margin-top: 20px
+}
+.banner-hero-promo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+}
+.banner-hero--img{
+    width: 120px; 
+    height: 120px
+}
+.banner-hero-remove-btn{
+    margin-top: 10px;
+    display: flex; 
+    justify-content: flex-end
+}
+.new-banner{
+    margin-top: 10px;
+    display: flex; 
+    justify-content: flex-end
+}
+
+/*-------------- bottomBar css ---------------------*/
+
+.grid-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.grid-title{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.grid-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.grid-colors-main{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px
+}
+.grid-col{
+    margin-top: 20px;
+    display: flex
+}
+.grid-title{
+    margin-top: 10px; 
+    padding-left: 10px
+}
+.grid-remove-btn{
+    margin-top: 10px;
+    display: flex; 
+    justify-content: flex-end
+}
+
+/*-------------- new Arrival css ---------------------*/
+
+.newArrival-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.newArrival-hd, .newArrival-sub-hd, .newArrival-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.newArrival-col-main{
+    margin-top: 20px;
+    display: flex
+}
+.newArrival-title{
+    margin-top: 10px; 
+    padding-left: 10px
+}
+.newArrival-colors-main{
+    display: flex; 
+    justify-content:space-around;
+}
+.newArrival-btn-bg, .newArrival-btn-border{
+    margin-top: 20px; 
+    margin-left: 40px
+}
+.newArrival-img-main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    margin-top: 10px
+}
+.newArrival-img-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+}
+.newArrival-img{
+    width: 220px; 
+    height: 220px; 
+    object-fit: contain
+}
+.newArrival-zone{
+    height: auto; 
+    padding-top: 0px
+}
+/*-------------- Block sorting css ---------------------*/
+
+.sorting-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.sorting-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/*-------------- shop by brand css ---------------------*/
+
+.shopBrand-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.shop-hd, .shop-sub-hd{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.shop-bg-main{
+    display: flex; 
+    margin-top: 20px;
+}
+.shop-img-main{
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.shop-vendor-img-main{
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 20px; 
+    justify-content: space-around; 
+    margin-top: 10px;
+}
+.shop-vendor-img-sub{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 32px;
+}
+.shop-vendor-img{
+    width: 220px; 
+    height: 220px; 
+    object-fit: contain;
+}
+.shop-vendor-img-zone{
+    height: auto; 
+    padding-top: 0px;
+}
+.shop-remove-btn{
+    width: 100%; 
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+/*-------------- collection css ---------------------*/
+
+.tile-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tile-sub-main{
+    margin-top: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+}
+.tile-sub{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.tile-color{
+    width: 50%; 
+    justify-content: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center
+}
+.tile-title, .tile-description, .tile-price, .tile-discount-price{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.tile-title-color-main, .tile-description-color-main, .tile-price-color-main, .tile-dprice-color-main{
+    width: 50%; 
+    justify-content: space-between; 
+    align-items: flex-end;
+}
+.tile-dum{
+    margin-left: 150px; 
+    margin-bottom: 10px;
+}
+
+/*-------------- pdp css ---------------------*/
+
+.pdp-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.pdp-colors-main{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+.pdp-sub-align{
+    margin-top: 10px; 
+    margin-right: 20px;
+}
+.pdp-align-div{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.pdp-colorPick-main{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+/*-------------- pdp css ---------------------*/
+
+.menu-main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.menu-colors-main{
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 50px;
+}
+.menu-colors-sub{
+    align-items: center; 
+    gap: 50px;
+}
+.menu-font-main{
+    margin-top: 20;
+    display: flex;
+    flex-direction: column;
+}
+.menu-handle-main{
+    flex: 0.5;
+    margin-top: 20px;
+    justify-content: "flex-start";
+}
+.menu-deal{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.menu-social-icon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-social-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*-------------- bottomBar css ---------------------*/
+
+.bottom-bar-main {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.bottom-bar-color{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+.bottom-bar-svg{
+    width: 100%; 
+    margin-top: 10px
+}
+
+/*-------------- Jodit Editor css ---------------------*/
+.jodit-progress-bar {
+     display: none !important;
+}
